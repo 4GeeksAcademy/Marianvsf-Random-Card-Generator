@@ -3,27 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <title>Random Card Generator</title>
+    <link rel="shortcut icon" href="assets/img/4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
+    <div class="container">
+      <h3 class="float-md-none text-center">
+        Random Poker Card
+      </h3>
+    </div>
+    <div class="float-md-none">
+      <div class="fullContainer text-center">
+        <div class="container-fluid">
+          <span class="left-icon" id="icon1"></span>
+          <span class="number" id="myNumber"></span>
+          <span class="right-icon" id="icon2"></span>
+        </div>
+        <button
+          type="button"
+          class="btn btn-danger m-3"
+          id="generateButton"
+          onclick="location.reload()"
+        >
+          <em><strong>New Card</strong></em>
+        </button>
+      </div>
+      <br />
+      <div class="fixed-bottom text-center p-4">
         Made with ❤️ by
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
       </div>
     </div>
+    <br />
   </body>
 </html>
